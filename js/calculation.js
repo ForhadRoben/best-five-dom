@@ -1,7 +1,7 @@
 document.getElementById('calculate').addEventListener('click', function () {
-    const perplayerAmount = getElementValueById('per-player-amount');
+    const perplayerAmount = getElementValueById('player-salary');
 
-    const selectedPlayer = document.querySelectorAll('#selected-player li');
+    const selectedPlayer = document.querySelectorAll('#player-select li');
 
     const totalPlayerCost = selectedPlayer.length * perplayerAmount;
     console.log(totalPlayerCost);
@@ -12,9 +12,9 @@ document.getElementById('calculate').addEventListener('click', function () {
 
 });
 
-document.getElementById('total-calculate').addEventListener('click', function () {
-    const managerAmount = getElementValueById('manager-amount');
-    const coachAmount = getElementValueById('coach-amount');
+document.getElementById('total-calculation').addEventListener('click', function () {
+    const managerAmount = getElementValueById('manager-salary');
+    const coachAmount = getElementValueById('coach-salary');
 
     const playerAmountString = document.getElementById('player-expense').innerText;
     const playerAmount = parseFloat(playerAmountString);

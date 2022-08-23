@@ -120,14 +120,14 @@
             <section class="grid grid-cols-1 text-center font-semibold gap-4">
                 <div class="bg-black ">
                     <h2 class="pt-4 text-3xl"> Selected-V</h2>
-                    <ol id="selected-player">
+                    <ol id="player-select">
                     </ol>
                 </div>
                 <div class=" bg-black h-3/4 ">
                     <h1 class="pt-4 text-3xl">Budget</h1>
                     <div class="grid grid-cols-2 pt-4">
                         <h4>per player</h4>
-                        <input class="w-3/4 bg-black border-2" id="per-player-amount" type="text">
+                        <input class="w-3/4 bg-black border-2" id="player-salary" type="text">
                     </div>
 
                     <div class="pt-4"><button id="calculate"
@@ -136,22 +136,26 @@
                     <h4 class="pt-4">Player expense $<span id="player-expense">00</span></h4>
                     <div class="grid grid-cols-2 pt-4">
                         <h4>Manager</h4>
-                        <input class="w-3/4 bg-black border-2" type="text" name="" id="manager-amount">
+                        <input class="w-3/4 bg-black border-2" type="text" name="" id="manager-salary">
                     </div>
 
                     <div class="grid grid-cols-2 pt-4">
                         <h4>Coach</h4>
-                        <input class="w-3/4 bg-black border-2" type="text" id="coach-amount">
+                        <input class="w-3/4 bg-black border-2" type="text" id="coach-salary">
                     </div>
 
                     <div class="pt-4"><button class="bg-blue-700 mt-2 px-8 py-2 text-white font-medium rounded"
-                            id="total-calculate">
+                            id="total-calculation">
                             Calculate Total</button></div>
                     <h4 class="pt-4">Total $<span id="cost">00</span></h4>
                 </div>
             </section>
         </section>
+
     </main>
+    <footer class="bg-black p-5 mt-5 text-light text-center">
+        <h3>Copyright @ 2022 All Rights Reserved.</h3>
+    </footer>
 
     <script src="js/utilities.js"></script>
     <script src="js/calculation.js"></script>

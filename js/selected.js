@@ -1,19 +1,22 @@
-document.getElementById('button-field1').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
-    if (selectedPlayerlength.length < 5) {
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field1');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
+// 1.length check whether length<5 or Notification
+// 2.button disable or Notification
+// 3. get player name by selecting name field 
+// 4.add player in the selected box 
+// 5.if length < 5 show alert
 
-        //playerName get
+document.getElementById('button-field1').addEventListener('click', function () {
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
+    if (selectedPlayerlength.length < 5) {
+        const btnDisabled = document.getElementById('button-field1');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
         const name = document.getElementById('name-field1');
-        const elemet = name.innerText;
-        //add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+        const element = name.innerText;
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -23,21 +26,21 @@ document.getElementById('button-field1').addEventListener('click', function () {
 
 });
 document.getElementById('button-field2').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
-    if (selectedPlayerlength.length < 5) {
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field2');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
-        //player Name get
-        const name = document.getElementById('name-field2');
-        const elemet = name.innerText;
 
-        // add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
+    if (selectedPlayerlength.length < 5) {
+
+        const btnDisabled = document.getElementById('button-field2');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
+        const name = document.getElementById('name-field2');
+        const element = name.innerText;
+
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -49,21 +52,21 @@ document.getElementById('button-field2').addEventListener('click', function () {
 
 document.getElementById('button-field3').addEventListener('click', function () {
 
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
-    if (selectedPlayerlength.length < 5) {
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field3');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
-        //player name get
-        const name = document.getElementById('name-field3');
-        const elemet = name.innerText;
 
-        //add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
+    if (selectedPlayerlength.length < 5) {
+
+        const btnDisabled = document.getElementById('button-field3');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
+        const name = document.getElementById('name-field3');
+        const element = name.innerText;
+
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -73,20 +76,20 @@ document.getElementById('button-field3').addEventListener('click', function () {
 
 });
 document.getElementById('button-field4').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
+
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
     if (selectedPlayerlength.length < 5) {
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field4');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
-        //player name get
+
+        const btnDisabled = document.getElementById('button-field4');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
         const name = document.getElementById('name-field4');
-        const elemet = name.innerText;
-        //add hobe 
-        const selectedPlayer = document.getElementById('selected-player');
+        const element = name.innerText;
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -98,21 +101,21 @@ document.getElementById('button-field4').addEventListener('click', function () {
 });
 
 document.getElementById('button-field5').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
-    if (selectedPlayerlength.length < 5) {
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field5');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
-        //player name get
-        const name = document.getElementById('name-field5');
-        const elemet = name.innerText;
 
-        //add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
+    if (selectedPlayerlength.length < 5) {
+
+        const btnDisabled = document.getElementById('button-field5');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
+        const name = document.getElementById('name-field5');
+        const element = name.innerText;
+
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -123,21 +126,20 @@ document.getElementById('button-field5').addEventListener('click', function () {
 });
 
 document.getElementById('button-field6').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
-    if (selectedPlayerlength.length < 5) {
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field6');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
-        //player name get
-        const name = document.getElementById('name-field6');
-        const elemet = name.innerText;
 
-        //add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
+    if (selectedPlayerlength.length < 5) {
+
+        const btnDisabled = document.getElementById('button-field6');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
+        const name = document.getElementById('name-field6');
+        const element = name.innerText;
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -147,23 +149,23 @@ document.getElementById('button-field6').addEventListener('click', function () {
 });
 
 document.getElementById('button-field7').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
+
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
     if (selectedPlayerlength.length < 5) {
 
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field7');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
 
-        //player name get
+        const btnDisabled = document.getElementById('button-field7');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
+
         const name = document.getElementById('name-field7');
-        const elemet = name.innerText;
+        const element = name.innerText;
 
-        //add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -174,22 +176,22 @@ document.getElementById('button-field7').addEventListener('click', function () {
 
 
 document.getElementById('button-field8').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
+
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
     if (selectedPlayerlength.length < 5) {
 
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field8');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
-        //player name get
-        const name = document.getElementById('name-field8');
-        const elemet = name.innerText;
 
-        //add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+        const btnDisabled = document.getElementById('button-field8');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
+        const name = document.getElementById('name-field8');
+        const element = name.innerText;
+
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
@@ -199,22 +201,22 @@ document.getElementById('button-field8').addEventListener('click', function () {
 });
 
 document.getElementById('button-field9').addEventListener('click', function () {
-    //length check
-    const selectedPlayerlength = document.querySelectorAll('#selected-player li');
+
+    const selectedPlayerlength = document.querySelectorAll('#player-select li');
     if (selectedPlayerlength.length < 5) {
 
-        // disabled btn
-        const btnDesabaled = document.getElementById('button-field9');
-        btnDesabaled.setAttribute('disabled', true);
-        btnDesabaled.style.backgroundColor = 'gray';
-        //player name get
-        const name = document.getElementById('name-field9');
-        const elemet = name.innerText;
 
-        //add hobe
-        const selectedPlayer = document.getElementById('selected-player');
+        const btnDisabled = document.getElementById('button-field9');
+        btnDisabled.setAttribute('disabled', true);
+        btnDisabled.style.backgroundColor = 'lightgray';
+
+        const name = document.getElementById('name-field9');
+        const element = name.innerText;
+
+
+        const selectedPlayer = document.getElementById('player-select');
         const createElement = document.createElement('li');
-        createElement.innerText = elemet;
+        createElement.innerText = element;
 
         selectedPlayer.appendChild(createElement);
 
