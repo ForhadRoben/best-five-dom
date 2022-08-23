@@ -33,8 +33,8 @@
     </header>
     <!-- -------------Header part end------------------>
     <main class="m-12">
-        <div class="mx-8 px-8 grid grid-cols-4 gap-4 ">
-            <div class="card grid grid-cols-3 col-span-3 gap-4 text-center ">
+        <section class="mx-8 px-8 grid grid-cols-4 gap-4 ">
+            <section class="card grid grid-cols-3 col-span-3 gap-4 text-center ">
                 <div class="border-2 rounded border-gray-600 pb-2 bg-black">
                     <div><img class="card-image" src="images/cr7.jpg" alt=""></div>
                     <div class="">
@@ -116,13 +116,10 @@
                             SELECT</button>
                     </div>
                 </div>
-
-
-
-            </div>
-            <div class="side-box">
-                <div class="selected">
-                    <h2> Selected-V</h2>
+            </section>
+            <section class="side-box grid grid-cols-1 text-center font-semibold gap-4">
+                <div class="bg-black ">
+                    <h2 class="pt-4 text-3xl"> Selected-V</h2>
                     <ol id="selected-player">
                         <!-- <li id="another-selector">hi</li>
                         <li>honny</li>
@@ -131,31 +128,34 @@
                         <li>lhatam</li> -->
                     </ol>
                 </div>
-                <div class="budget">
-                    <h1 class="budget-title">Budget</h1>
-                    <div>
-                        <h4 class="input-text">per player</h4>
-                        <input id="per-player-amount" type="text">
+                <div class="budget bg-black h-3/4 ">
+                    <h1 class="budget-title pt-4 text-3xl">Budget</h1>
+                    <div class="grid grid-cols-2 pt-4">
+                        <h4 class="input-text ">per player</h4>
+                        <input class="w-3/4" id="per-player-amount" type="text">
                     </div>
 
-                    <div><button id="calculate" class="btn-calculate">calculate</button></div>
+                    <div class="pt-4"><button id="calculate"
+                            class="bg-blue-700 mt-2 px-8 py-2 text-white font-medium rounded">calculate</button></div>
 
-                    <h4>Player expense $<span id="player-expense">00</span></h4>
-                    <div>
-                        <h4 class="input-text">Manager:</h4>
-                        <input type="text" name="" id="manager-amount">
+                    <h4 class="pt-4">Player expense $<span id="player-expense">00</span></h4>
+                    <div class="grid grid-cols-2 pt-4">
+                        <h4 class="input-text">Manager</h4>
+                        <input class="w-3/4" type="text" name="" id="manager-amount">
                     </div>
 
-                    <div>
-                        <h4 class="input-text">Coach:</h4>
-                        <input type="text" id="coach-amount">
+                    <div class="grid grid-cols-2 pt-4">
+                        <h4 class="input-text">Coach</h4>
+                        <input class="w-3/4" type="text" id="coach-amount">
                     </div>
 
-                    <div><button class="btn-calculate" id="total-calculate"> Calculate Total</button></div>
-                    <h4>Total $<span id="cost">00</span></h4>
+                    <div class="pt-4"><button class="bg-blue-700 mt-2 px-8 py-2 text-white font-medium rounded"
+                            id="total-calculate">
+                            Calculate Total</button></div>
+                    <h4 class="pt-4">Total $<span id="cost">00</span></h4>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </main>
 
 </body>
