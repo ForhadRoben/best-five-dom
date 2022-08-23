@@ -4,7 +4,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     const selectedPlayer = document.querySelectorAll('#player-select li');
 
     const totalPlayerCost = selectedPlayer.length * perplayerAmount;
-    console.log(totalPlayerCost);
+
 
     const playerExpense = document.getElementById('player-expense');
     playerExpense.innerText = totalPlayerCost;

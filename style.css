@@ -6,3 +6,9 @@
     width: 264px;
     height: 204px;
 }
+
+.selected ol {
+    padding: 5px 20px;
+    margin-left: 20px;
+    list-style: decimal;
+}
